@@ -54,6 +54,9 @@
 		F034AD512A7CD51200BBEBE7 /* weatherappUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = weatherappUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F034AD552A7CD51200BBEBE7 /* weatherappUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = weatherappUITests.m; sourceTree = "<group>"; };
 		F034AD572A7CD51200BBEBE7 /* weatherappUITestsLaunchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = weatherappUITestsLaunchTests.m; sourceTree = "<group>"; };
+		F034AD652A7CD5E000BBEBE7 /* Coordinate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Coordinate.h; sourceTree = "<group>"; };
+		F034AD662A7CD86C00BBEBE7 /* Weather.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Weather.h; sourceTree = "<group>"; };
+		F034AD672A7CDA5900BBEBE7 /* WeatherInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WeatherInfo.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +87,7 @@
 		F034AD232A7CD51000BBEBE7 = {
 			isa = PBXGroup;
 			children = (
+				F034AD642A7CD53300BBEBE7 /* protocols */,
 				F034AD2E2A7CD51000BBEBE7 /* weatherapp */,
 				F034AD4A2A7CD51200BBEBE7 /* weatherappTests */,
 				F034AD542A7CD51200BBEBE7 /* weatherappUITests */,
@@ -134,6 +138,16 @@
 				F034AD572A7CD51200BBEBE7 /* weatherappUITestsLaunchTests.m */,
 			);
 			path = weatherappUITests;
+			sourceTree = "<group>";
+		};
+		F034AD642A7CD53300BBEBE7 /* protocols */ = {
+			isa = PBXGroup;
+			children = (
+				F034AD652A7CD5E000BBEBE7 /* Coordinate.h */,
+				F034AD662A7CD86C00BBEBE7 /* Weather.h */,
+				F034AD672A7CDA5900BBEBE7 /* WeatherInfo.h */,
+			);
+			path = protocols;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
