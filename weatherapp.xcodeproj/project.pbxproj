@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B9D5D38C2A8C05D7002BB28B /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9D5D38B2A8C05D7002BB28B /* Weather.swift */; };
+		B9D5D38E2A8C0640002BB28B /* Coord.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9D5D38D2A8C063F002BB28B /* Coord.swift */; };
+		B9D5D3932A8C06F4002BB28B /* WebCoord.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9D5D3922A8C06F4002BB28B /* WebCoord.swift */; };
+		B9D5D3952A8C08FB002BB28B /* WebWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9D5D3942A8C08FB002BB28B /* WebWeather.swift */; };
+		B9D5D3972A8C0A43002BB28B /* WeatherAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9D5D3962A8C0A43002BB28B /* WeatherAPI.swift */; };
 		F034AD312A7CD51000BBEBE7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F034AD302A7CD51000BBEBE7 /* AppDelegate.m */; };
 		F034AD342A7CD51000BBEBE7 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F034AD332A7CD51000BBEBE7 /* SceneDelegate.m */; };
 		F034AD372A7CD51000BBEBE7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F034AD362A7CD51000BBEBE7 /* ViewController.m */; };
@@ -37,6 +42,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B9D5D38A2A8C05D7002BB28B /* weatherapp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "weatherapp-Bridging-Header.h"; sourceTree = "<group>"; };
+		B9D5D38B2A8C05D7002BB28B /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
+		B9D5D38D2A8C063F002BB28B /* Coord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coord.swift; sourceTree = "<group>"; };
+		B9D5D3922A8C06F4002BB28B /* WebCoord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebCoord.swift; sourceTree = "<group>"; };
+		B9D5D3942A8C08FB002BB28B /* WebWeather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebWeather.swift; sourceTree = "<group>"; };
+		B9D5D3962A8C0A43002BB28B /* WeatherAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherAPI.swift; sourceTree = "<group>"; };
 		F034AD2C2A7CD51000BBEBE7 /* weatherapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = weatherapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F034AD2F2A7CD51000BBEBE7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F034AD302A7CD51000BBEBE7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -84,9 +95,36 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B9D5D38F2A8C06BD002BB28B /* data */ = {
+			isa = PBXGroup;
+			children = (
+				B9D5D3902A8C06CC002BB28B /* web */,
+			);
+			path = data;
+			sourceTree = "<group>";
+		};
+		B9D5D3902A8C06CC002BB28B /* web */ = {
+			isa = PBXGroup;
+			children = (
+				B9D5D3912A8C06DA002BB28B /* entities */,
+				B9D5D3962A8C0A43002BB28B /* WeatherAPI.swift */,
+			);
+			path = web;
+			sourceTree = "<group>";
+		};
+		B9D5D3912A8C06DA002BB28B /* entities */ = {
+			isa = PBXGroup;
+			children = (
+				B9D5D3922A8C06F4002BB28B /* WebCoord.swift */,
+				B9D5D3942A8C08FB002BB28B /* WebWeather.swift */,
+			);
+			path = entities;
+			sourceTree = "<group>";
+		};
 		F034AD232A7CD51000BBEBE7 = {
 			isa = PBXGroup;
 			children = (
+				B9D5D38F2A8C06BD002BB28B /* data */,
 				F034AD642A7CD53300BBEBE7 /* protocols */,
 				F034AD2E2A7CD51000BBEBE7 /* weatherapp */,
 				F034AD4A2A7CD51200BBEBE7 /* weatherappTests */,
@@ -146,6 +184,9 @@
 				F034AD652A7CD5E000BBEBE7 /* Coordinate.h */,
 				F034AD662A7CD86C00BBEBE7 /* Weather.h */,
 				F034AD672A7CDA5900BBEBE7 /* WeatherInfo.h */,
+				B9D5D38B2A8C05D7002BB28B /* Weather.swift */,
+				B9D5D38D2A8C063F002BB28B /* Coord.swift */,
+				B9D5D38A2A8C05D7002BB28B /* weatherapp-Bridging-Header.h */,
 			);
 			path = protocols;
 			sourceTree = "<group>";
@@ -217,6 +258,7 @@
 				TargetAttributes = {
 					F034AD2B2A7CD51000BBEBE7 = {
 						CreatedOnToolsVersion = 14.3.1;
+						LastSwiftMigration = 1420;
 					};
 					F034AD462A7CD51200BBEBE7 = {
 						CreatedOnToolsVersion = 14.3.1;
@@ -280,10 +322,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B9D5D3972A8C0A43002BB28B /* WeatherAPI.swift in Sources */,
 				F034AD372A7CD51000BBEBE7 /* ViewController.m in Sources */,
+				B9D5D3952A8C08FB002BB28B /* WebWeather.swift in Sources */,
 				F034AD312A7CD51000BBEBE7 /* AppDelegate.m in Sources */,
+				B9D5D3932A8C06F4002BB28B /* WebCoord.swift in Sources */,
 				F034AD422A7CD51200BBEBE7 /* main.m in Sources */,
+				B9D5D38E2A8C0640002BB28B /* Coord.swift in Sources */,
 				F034AD342A7CD51000BBEBE7 /* SceneDelegate.m in Sources */,
+				B9D5D38C2A8C05D7002BB28B /* Weather.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -454,6 +501,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -471,6 +519,9 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.rodsaseg.weatherapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "protocols/weatherapp-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -480,6 +531,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -497,6 +549,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.rodsaseg.weatherapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "protocols/weatherapp-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -504,6 +558,7 @@
 		F034AD5F2A7CD51200BBEBE7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -521,6 +576,7 @@
 		F034AD602A7CD51200BBEBE7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -538,6 +594,7 @@
 		F034AD622A7CD51200BBEBE7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -553,6 +610,7 @@
 		F034AD632A7CD51200BBEBE7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
